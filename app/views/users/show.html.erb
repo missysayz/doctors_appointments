@@ -1,2 +1,17 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<h1><%= @user.full_name %></h1>
+<hr />
+<h2>Doctors</h2>
+<ul>
+  <% @user.doctors.each do |doctor| %>
+    <li>
+      <%= doctor.full_name %>
+    </li>
+  <% end %>
+</ul>
+<ul>
+  <% @doctor.appointments.each do |appointments| %>
+  <li>
+  <%= appointments.date %>
+  </li>
+  <%= end %>
+  </ul>
