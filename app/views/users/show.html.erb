@@ -9,9 +9,9 @@
   <% end %>
 </ul>
 <ul>
-  <% @doctor.appointments.each do |appointments| %>
+  <% @doctor.appointments.each do |appointment| %>
   <li>
-  <%= appointments.date %>
+  <%= appointment.date %>
   </li>
-  <%= end %>
+  <% end %>
   </ul>
